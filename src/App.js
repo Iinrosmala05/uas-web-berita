@@ -6,7 +6,9 @@ function App() {
   return (
     <div>
       <NavBarCustom />
+      <div className='my-5'></div> {/*Tambah jarak sebelum konten*/}
       <Konten />
+       <div className='my-5'></div> {/*Tambah jarak sebelum footer*/}
       <Footer />
     </div>
   );

@@ -3,3 +3,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}

@@ -38,7 +38,10 @@ function Konten() {
             {berita.map((item,index)=>(
                 <Col md={6} Ig={4} key={index} className="mb-4">
                     <Card className="h-100 shadow-sm"> 
-                        <Card.Img variant="top" src={item.gambar}/>
+                        <Card.Img 
+                            variant="top" 
+                            src={item.gambar}
+                            style={{ height: "200px", objectFit: "cover"}}/>
                         <Card.Body>
                             <Badge bg="secondary" className="mb-2">{item.kategori}</Badge>
                             <Card.Title>{item.judul}</Card.Title>

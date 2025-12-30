@@ -1,11 +1,11 @@
-import Navbar from './Nafbar';
+import NavBarCustom from './Navbar';
 import Konten from './Konten';
 import Footer from './Footer';
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <NavBarCustom />
       <Konten />
       <Footer />
     </div>

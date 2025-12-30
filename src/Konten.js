@@ -2,12 +2,21 @@ import React from "react";
 import {Card, Container,Row,Col} from 'react-bootstrap'
 
 function Konten() {
-    const berita = [
-        { judul: "Berita Ekonomi Hari ini", deskripsi: "Isi singkat berita ekonomi..."},
-        { judul: "Berita Teknologi Hari ini", deskripsi: "Isi singkat berita teknologi..."},
-        { judul: "Berita Olahraga Hari ini", deskripsi: "Isi singkat berita olahraga..."},
-    ];
-
+   const berita = [
+    {
+        judul: "Ekonomi Hari Ini",
+        deskripsi: "Berita terkini seputar perkembangan ekonomi nasional dan internasional",
+    },
+    {
+        judul: "Teknologi Terbaru",
+        deskripsi: "Update teknologi dan gadget terbaru yang menarik untuk diikuti",
+    },
+    {
+        judul: "Olahraga Hari Ini",
+        deskripsi: "Ringkasan berita olahraga dari berbagai cabang olahraga",
+    },
+   ];
+   
     return(
       <Container className="my-4">
         <Row>

@@ -1,6 +1,6 @@
-import NavBarCustom from './Navbar';
-import Konten from './Konten';
-import Footer from './Footer';
+import NavBarCustom from './components/Navbar';
+import Konten from './components/Konten';
+import Footer from './components/Footer';
 
 function App() {
   return (

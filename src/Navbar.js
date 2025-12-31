@@ -24,7 +24,7 @@ function NavBarCustom() {
                             <NavDropdown.Item onClick={() => handleScroll("olahraga")}>Olahraga</NavDropdown.Item>
                             <NavDropdown.Item onClick={() => handleScroll("kesehatan")}>Kesehatan</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#">Tentang</Nav.Link>
+                        <Nav.Link onClick={()=>handleScroll("tentang")}>Tentang</Nav.Link>
                         <Nav.Link href="mailto:info@beritaonline.com">Kontak</Nav.Link>
                         <Nav.Link onClick={()=> handleScroll("home")}></Nav.Link>
                     </Nav>

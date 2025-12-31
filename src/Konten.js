@@ -57,9 +57,16 @@ function Konten() {
                     </Card>
                 </Col>
                  </Row>
-        </section>
-
+             </section>
             ))}
+
+            {/*===== TENTANG KAMI ==== */}
+            <section id="tentang" style={{ marginTop: "100px", scrollMarginTop: "80px"}}>
+                <h2>Tentang Kami</h2>
+                <p>
+                    Berita Online adalah portal berita digital yang menyajikan informasi terkini seputar ekonomi, teknologi, olahraga,dan kesehatan.
+                </p>
+            </section>
       </Container> 
 
     );

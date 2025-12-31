@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, Container,Row,Col, Badge} from 'react-bootstrap';
+import {Card, Container,Row,Col, Badge,} from 'react-bootstrap';
 
 function Konten() {
    const berita = [
@@ -39,31 +39,27 @@ function Konten() {
 
     return(
       <Container className="my-4">
-        <Row>
-            {berita.map((item,index)=>(
-                <Col md={6} lg={4} key={index} className="mb-4">
-                    <Card className="h-100 shadow-sm"> 
-                        <Card.Img 
-                            variant="top" 
+            {berita.map((item)=>(
+                <section id={item.id} key={item.id} style={{ scrollMarginTop: "80px"}}>
+                <Row>
+                <Col md={6} lg={4} key={item.id} id={item.id} className="mb-4">
+                    <Card className="h-100 shadow-sm">
+                        <Card.Img
+                            variant="top"
                             src={item.gambar}
                             style={{ height: "200px", objectFit: "cover"}}/>
                         <Card.Body>
-                            <Badge bg={
-                                item.kategori==="Ekonomi"?"warning":
-                                item.kategori==="Teknologi"?"info":
-                                item.kategori==="Olahraga"?"danger":
-                                item.kategori==="Kesehatan"?"warning":"secondary"
-                            } className="mb-2">
-                                {item.kategori}
-                            </Badge>
-                            <Card.Title>{item.judul}</Card.Title>
-                            <Card.Text>{item.deskripsi}</Card.Text>
+                            <Badge bg="secondary" className="mb-2">{item.kategori}</Badge>
+                                <Card.Title>{item.judul}</Card.Title>
+                                <Card.Text>{item.deskripsi}</Card.Text>
                         </Card.Body>
                         <Card.Footer className="text-muted">{item.tanggal}</Card.Footer>
                     </Card>
                 </Col>
+                 </Row>
+        </section>
+
             ))}
-        </Row>
       </Container> 
 
     );

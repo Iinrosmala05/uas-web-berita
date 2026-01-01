@@ -2,6 +2,7 @@ import React from "react";
 import {Card, Container,Row,Col, Badge,} from 'react-bootstrap';
 
 function Konten() {
+    
    const berita = [
     {
         id: "ekonomi",

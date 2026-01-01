@@ -1,8 +1,7 @@
-import React from "react";
-import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
-
+import React, {useState} from "react";
+import { Navbar, Nav, Container, NavDropdown, Form, Button} from "react-bootstrap";
 function NavBarCustom() {
-
+    const [search, setSearch] = React.useState("");
     const handleScroll = (id) => {
         const element = document.getElementById(id);
         if(element){
@@ -16,7 +15,16 @@ function NavBarCustom() {
                 <Navbar.Brand href="#">Berita Online</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto align-items-cener">
+                        <Form className="d-flex">
+                            <Form.Control
+                            type="search"
+                            placeholder="cari berita..."
+                            className="me-2"
+                            value={search}
+                            onChange={(e)=> setSearch(e.target.value)}/>
+                            <Button variant='outline-light'>Cari</Button>
+                        </Form>
                         <Nav.Link href="#" onClick={() => window.scrollTo({ top:0, behavior: 'smooth'})}>Home</Nav.Link>
                         <NavDropdown title="kategori" id="basic-nav-dropdown">
                             <NavDropdown.Item onClick={() => handleScroll("ekonomi")}>Ekonomi</NavDropdown.Item>
